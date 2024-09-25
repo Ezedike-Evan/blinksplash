@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body{
+  background-color: #000;
+  color: #fff;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+footer ul{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+footer p{
+  opacity: 70%;
+  text-transform: capitalize;
+}
+
+@media (max-width:500px) {
+  nav{
+    padding: 25px 30px;
+  }
+}
