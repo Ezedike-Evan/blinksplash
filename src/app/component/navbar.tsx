@@ -1,10 +1,11 @@
-import '@/app/css/home.modules.css'
+import React from 'react'
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 
 const Navbar = ()=>{
     return (
         <nav>
             <h1>logo</h1>
-            <p>connect wallet</p>
+            <WalletMultiButton />
         </nav>
     )
   }

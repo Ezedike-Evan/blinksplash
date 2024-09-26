@@ -1,0 +1,91 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#get-started{
+    width: 100vw;
+    flex: 1;
+    max-width: 900px;
+    margin:auto;
+    padding:20px;
+    text-align: center;
+    position: relative;
+}
+#get-started h2{
+    font-size: 50px;
+    margin-bottom:7px;
+    text-transform: capitalize;
+    z-index: 1;
+}
+#get-started .blinkie{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+}
+#get-started .blinkie:first-of-type{
+    left: -50px;
+}
+#get-started .blinkie:last-of-type{
+    right: -50px;
+    transform: scaleX(-1);
+}
+#get-started p{
+    font-size: 25px;
+    margin: 7px auto 20px;
+    opacity: 70%;
+    display: inline-block;
+    font-weight: 700;
+}
+#get-started button{
+    border: none;
+    border-radius: 40px 0;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 18px 40px;
+    background-color: var(--btn-bg-color);
+    text-transform: uppercase;
+}
+@media (max-width:800px) {
+    #get-started h2{
+        margin: 5px 0 7px;
+    }
+    #get-started .blinkie{
+        position: relative;
+        top: 0px;
+    }
+    #get-started .blinkie:first-of-type{
+        left: 0px;
+    }
+    #get-started .blinkie:last-of-type{
+        right: 0px;
+    }    
+}
+@media (max-width:500px) {
+    #get-started h2{
+        font-size: 25px;
+    }
+    #get-started .blinkie{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 0px;
+    }
+    #get-started .blinkie:first-of-type{
+        left: 0px;
+    }
+    #get-started .blinkie:last-of-type{
+        right: 0px;
+    }
+    #get-started p{
+        width: 60%;
+        font-size: 15px;
+        margin: 7px 0 10px;
+    }
+    #get-started button{
+        font-size: 20px;
+        padding: 10px 25px;
+        border-radius: 30px 0;
+    }
+}

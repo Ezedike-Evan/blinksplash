@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { WalletProviderComponent } from "./context/walletcontext";
 
 export const metadata: Metadata = {
   title: "Blinks Splash",
@@ -10,8 +11,10 @@ export default function RootLayout({ children}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body>
-        {children}
+        <WalletProviderComponent>
+          {children}
+        </WalletProviderComponent>
       </body>
     </html>
-  );
+  )
 }
