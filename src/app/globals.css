@@ -16,6 +16,9 @@ body{
   /* overflow: hidden; */
   font-family: "Roboto", sans-serif;
 }
+button{
+    font-family: "Roboto", sans-serif;
+}
 nav{
   display: flex;
   align-items: center;
