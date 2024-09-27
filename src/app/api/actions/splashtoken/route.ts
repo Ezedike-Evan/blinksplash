@@ -1,21 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-    ActionPostResponse,
-    createPostResponse,
     ActionGetResponse,
-    ActionPostRequest,
     createActionHeaders,
     ActionError,
   } from "@solana/actions";
-  import {
-    clusterApiUrl,
-    Connection,
-    LAMPORTS_PER_SOL,
-    PublicKey,
-    SystemProgram,
-    Transaction,
-  } from "@solana/web3.js";
-  import { DEFAULT_SOL_ADDRESS, DEFAULT_SOL_AMOUNT } from "./const";
   
   // create the standard headers for this route (including CORS)
   const headers = createActionHeaders();
