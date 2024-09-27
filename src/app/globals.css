@@ -3,7 +3,6 @@
     --btn-bg-color:red;
     --wallet-bg-color:blue;
 }
-
 *{
   box-sizing: border-box;
   padding: 0;
@@ -79,7 +78,6 @@ footer p{
     background-color: #1a1f2e;
     color: #fff;
 }
-
 .wallet-adapter-button[disabled] {
     background: #404144;
     color: #999;
