@@ -1,7 +1,7 @@
 #home{
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 95vh;
 }
 #get-started{
     width: 100vw;
@@ -11,6 +11,9 @@
     padding:20px;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #get-started h2{
     font-size: 50px;
