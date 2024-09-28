@@ -1,7 +1,7 @@
 #home{
     display: flex;
     flex-direction: column;
-    min-height: 95vh;
+    min-height: 100vh;
 }
 #get-started{
     width: 100vw;
@@ -16,10 +16,12 @@
     justify-content: center;
 }
 #get-started h2{
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: 700;
     margin-bottom:7px;
     text-transform: capitalize;
     z-index: 1;
+    line-height: 1.2;
 }
 #get-started .blinkie{
     width: 200px;
@@ -35,11 +37,12 @@
     transform: scaleX(-1);
 }
 #get-started p{
-    font-size: 25px;
+    font-size: 18px;
     margin: 7px auto 20px;
-    opacity: 70%;
+    color: #ccc;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 400;
+    line-height: 1.6;
 }
 #get-started button{
     border: none;

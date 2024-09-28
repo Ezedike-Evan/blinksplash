@@ -1,49 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
-    --btn-bg-color:red;
-    --wallet-bg-color:blue;
+    --btn-bg-color:#4E9FFF;
+    --wallet-bg-color:rgb(0, 0, 100);
 }
 *{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: #fff;
 }
 body{
-  background-color: #000;
-  color: #fff;
-  /* overflow: hidden; */
-  font-family: "Roboto", sans-serif;
+    background-color: #1e1e1e;
+    font-family: "Roboto", sans-serif;
 }
 button{
     font-family: "Roboto", sans-serif;
 }
 nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
 }
 footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
 }
 footer ul{
-  display: flex;
-  gap: 60px;
-  margin-bottom: 10px;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 10px;
 }
 footer ul li a{
-    color: #fff;
+    color: black;
 }
 footer ul li a svg{
     font-size: 40px;
 }
 footer p{
-  opacity: 70%;
-  text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 70%;
+    text-transform: capitalize;
 }
 
 @media (max-width:500px) {
@@ -54,12 +56,11 @@ footer p{
     gap: 18px;
   }
   footer ul li a{
-      color: #fff;
+    color: #fff;
   }
   footer ul li a svg{
-      font-size: 20px;
+    font-size: 20px;
   }
-  
 }
 
 
@@ -77,7 +78,7 @@ footer p{
 }
 
 .wallet-adapter-button:not([disabled]):hover {
-    background-color: #1a1f2e;
+    background-color: #2044af;
     color: #fff;
 }
 .wallet-adapter-button[disabled] {
