@@ -1,6 +1,11 @@
+import axios from 'axios'
 import React from 'react'
 
 const Createform = ()=>{
+  const handleCreateEvent = (e:React.FormEvent<HTMLFormElement>)=>{
+    e.preventDefault()
+    axios.post('/api/actions/splashtoken',{name:'testing'})
+  }
   return (
     <main id='create-form'>
         <h2>Create a new event</h2>
@@ -13,11 +18,9 @@ const Createform = ()=>{
        <label htmlFor="">No. of users</label>
        <input type='number' min='1' placeholder='enter the no of users'/>
        <sub>no of sol per user</sub>
-       <label htmlFor="">Event image</label>
-       <input type="file" accept='image/*' />
        <label htmlFor="">Description</label>
        <textarea name="" id="" placeholder='enter a description for the event'></textarea>
-       <button>Create event</button>
+       <button type='submit'>Create event</button>
     </main>
   )
 }
